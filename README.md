@@ -57,7 +57,7 @@ chmod +x run_analysis.sh
 3. Run the Analysis
 ./run_analysis.sh
 
-This script:
+## This script:
 
 Cleans and builds the project.
 
@@ -67,7 +67,7 @@ Executes the GPU-based FFT analyzer.
 
 Outputs frequency-domain results to the output_data/ folder.
 
-Output Details
+## Output Details
 
 Each output file (e.g., fft_output.txt) contains the frequency magnitude spectrum of the processed audio signal.
 
@@ -83,7 +83,7 @@ plt.xlabel("Frequency Bin")
 plt.ylabel("Magnitude")
 plt.show()
 
-Key Concepts
+## Key Concepts
 
 FFT (Fast Fourier Transform): Converts a time-domain signal into its frequency components.
 
@@ -91,7 +91,7 @@ CUDA (Compute Unified Device Architecture): Enables parallel computation on NVID
 
 cuFFT: NVIDIA’s high-performance FFT library.
 
- File Descriptions
+## File Descriptions
 File	Description
 main.cpp	Handles audio input and calls the GPU FFT function.
 kernel.cu	Implements CUDA-based FFT using cuFFT APIs.
@@ -100,27 +100,28 @@ generate_audio.py	Produces sample .wav or raw audio data.
 Makefile	Compiles all CUDA and C++ components.
 run_analysis.sh	Automates build, data generation, and execution.
 
-Example
+## Example
 
 Example output plot for a generated sine wave (1 kHz):
 
 Input Signal: 1 kHz Sine Wave
 FFT Peak Detected at: ~1000 Hz
 
- Troubleshooting
+##  Troubleshooting
 Issue	Possible Fix
 nvcc: command not found	Ensure CUDA Toolkit is installed and nvcc is in PATH.
 cufft.h: No such file or directory	Verify CUDA Toolkit include path.
 Segmentation fault (core dumped)	Check array sizes and GPU memory limits.
 Permission denied on .sh script	Run chmod +x run_analysis.sh.
 
- Author
+## Author
 
 Yatin Singh
 B.Tech, IIIT Delhi
  Contact: yatin23614@iiitd.ac.in]
  GitHub: Yatin23614
 
- License
+## License
 
 MIT License (educational / academic use)
+
