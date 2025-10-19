@@ -18,13 +18,13 @@ It processes audio data, performs FFT computations on the GPU, and outputs frequ
 
 ##  Project Structure
 
- cuda-audio-fft-analyzer
+cuda-audio-fft-analyzer
 ├── main.cpp # Entry point, loads data and calls CUDA FFT wrapper
 ├── kernel.cu # CUDA implementation of FFT logic
 ├── kernel.h # Header declaring CUDA interface
 ├── generate_audio.py # Generates synthetic audio samples
 ├── Makefile # Handles compilation and linking
-├── run_analysis.sh # Automates the build and run process
+├── run_analysis.sh # Automates build, data generation, and execution
 ├── input_data/ # Contains generated audio input files
 └── output_data/ # Stores FFT output files
 
@@ -47,8 +47,8 @@ It processes audio data, performs FFT computations on the GPU, and outputs frequ
 ## Setup and Execution
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/cuda-audio-fft-analyzer.git
+##bash
+git clone https://github.com/Yatin23614/gpu-audio-fft-analyzer.git
 cd cuda-audio-fft-analyzer
 
 2. Make the Script Executable
@@ -118,6 +118,9 @@ Permission denied on .sh script	Run chmod +x run_analysis.sh.
 
 Yatin Singh
 B.Tech, IIIT Delhi
- Contact: yatin23614@iiitd.ac.in
-]
- GitHub: 
+ Contact: yatin23614@iiitd.ac.in]
+ GitHub: Yatin23614
+
+ License
+
+MIT License (educational / academic use)
